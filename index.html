@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Whisper&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.freepik.com/vetores-gratis/o-simbolo-da-balanca-da-justica_1308-122697.jpg?w=740&t=st=1702693838~exp=1702694438~hmac=d23c2f6fbe3ed9d918187b0af9c079216734e76cefa47e2b790855c468b4ad68">
+    <title>Advocacia</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <div id="header">
+        <div id="logo"><img src="https://img.freepik.com/vetores-gratis/o-simbolo-da-balanca-da-justica_1308-122697.jpg?w=740&t=st=1702693838~exp=1702694438~hmac=d23c2f6fbe3ed9d918187b0af9c079216734e76cefa47e2b790855c468b4ad68"></div>
+        <div id="menu">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#team">Equipe</a></li>
+                <li><a href="#expertise">Áreas de atuação</a></li>
+                <li><a href="#contactTitle">Contato</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--IMAGEM DE CAPA-->
+    <div id="cover">
+        <div>
+            <h1>Fulana da Silva</h1>
+        </div>
+    </div>
+
+    <!--SOBRE-->
+    <div id="body">
+        <div id="about">
+            <h1>Sobre Mim</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu. Neque gravida in fermentum et sollicitudin.</p>
+        </div>
+
+        <div id="aboutImg" >
+            <img src="https://cdn.pixabay.com/photo/2015/02/01/18/25/hammer-620008_1280.jpg">
+        </div>
+    </div>
+
+    <!-- EQUIPE-->
+    <div id="team">
+        <h1>Equipe</h1>
+        <div id="rectangle"></div>
+        <div id="photographs">
+            <img class="arrow" id="setaEsquerda"onclick="RolarParaEsquerda()" src="icons/left_arrow.svg">
+            <img class="lawyer" id="lawyer1" src="imagens/lawyer1.jpg">        
+            <img class="lawyer" id="lawyer2" src="imagens/lawyer2.jpg">
+            <img class="lawyer" id="lawyer3" src="imagens/lawyer3.jpg">
+            <img class="lawyer" id="lawyer4" src="imagens/lawyer4.jpg">
+            <img class="lawyer" id="lawyer5" src="imagens/lawyer5.jpg">
+            <img class="lawyer" id="lawyer6" src="imagens/lawyer6.jpg">
+            <img class="arrow" id="setaDireita" onclick="RolarParaDireita()" src="icons/right_arrow.svg"> 
+        </div>
+    </div>
+
+    <!--ÁREAS DE ATUAÇÃO-->
+    <div id="expertise">
+        <h1 class="title">Áreas de Atuação</h1>
+           
+        <!--CARDS-->
+        <div id="cards">
+            <div class="card">
+                <div class="cardDisplay">
+                    <img src="icons/civel.svg">
+                    <h2>Cível</h2>
+                </div>
+                <div>           
+                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                    <div class="cardDisplay">
+                        <img src="icons/business.svg">
+                        <h2>Empresarial</h2>
+                    </div>
+                    <div>
+                        <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl.</p>
+                    </div>
+            </div>
+
+            <div class="card">
+                <div class="cardDisplay">
+                    <img src="icons/labor.svg">
+                    <h2>Trabalhista</h2>
+                </div>
+                <div>                
+                    <p class="texto-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTATO-->
+        <div id="contactTitle"></div>
+            <h1 id="formTitle">Em que posso ajudá-lo?</h1>
+            <h2 id="textoContato">Nos envie uma mensagem 
+                contando como podemos lhe ajudar<br>
+                ou fale conosco direto pelo Whatsapp.<br>
+                
+                Garantimos que nossa equipe
+                responderá o mais breve
+                possível!</h2>
+        </div>
+
+         <div id="contact">
+            <div>
+                <form id="form" action="https://api.sheetmonkey.io/form/dNw7vaVMmDJWz6vkbbENsk" method="post">
+                    <input type="text" placeholder="Nome" name="Name" required><br>
+                    <input type="email" placeholder="Email" name="Email" required><br>
+                    <input type="number" placeholder="Telefone" name="Phone" required><br>
+                    <textarea rows="10" cols="40" placeholder="Mensagem" name= "Message" required style="resize: none"></textarea><br>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div id="imageContact"><img src="imagens/8778031.jpg" width="410" height="405" alt=""></div>
+       </div>
+
+    <!--MENU INFERIOR-->
+        <div id="menuInferior">
+            <div id="location">
+                <h1>Localização</h1><br>
+                <p>Rua Doutor Eduardo Amaro, nº 99<br>
+                São Paulo - SP | CEP 99999-999</p>
+            </div>
+            
+            <div id="phone">
+                <h1>Contato</h1><br>
+                <ul>
+                    <li>
+                        <div id="whatsapp">
+                            <div id="icon">
+                                <a href="https://api.whatsapp.com/send/?phone=5599999999999"><img src="icons/whatsapp.svg"></a>
+                            </div>
+                            <div id="phoneNum">(99) 99999-9999</div>
+                        </div>
+                    </li>
+                    <li><a>advocacia@advocacia.com</li>
+                </ul>
+            </div>
+
+            <div id="contacLinks">
+                <h1>Redes Sociais</h1><br>
+                <ul id="links">
+                    <li><a href=""><img src="icons/instagram.svg"></a></li>
+                    <li><a href=""><img src="icons/facebook.svg"></a></li>
+                    <li><a href=""><img src="icons/youtube.svg"></a></li>
+                </ul>
+            </div>                
+        </div>
+
+        <div id="final">
+            <p>Copyrigth © 2023 - Advocacia Fulana da Silva – Todos os Direitos Reservados.</p>
+        </div>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    font-family: Montserrat;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --blue: #14213e;
+    --yellow:#B89B5E; 
+}
+
+#header{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    background-image: url(imagens/fundo-header.svg);
+    padding: 5px;
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 10px 150px;
+    border-radius: 50px;
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li{
+    display: inline-block;
+    margin: 50px 60px 50px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ a{
+    color: white;
+    text-decoration: none;
+ }
+
+#cover{
+    background-color: var(--blue);
+    border-bottom: 8px;
+    border-top: 5px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: #B89B5E;
+}
+
+#cover h1{
+    color: var(--yellow);
+    text-align: center;
+    font-family: Whisper;
+    font-size: 120px;
+    text-shadow: 0px 0px 5px var(--yellow);
+    padding: 60px;
+}
+
+#body{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+#about h1{
+    margin: 150px 0px 30px 60px;
+    color: var(--blue);
+}
+
+#about p{
+    margin: 60px 0px 0px 60px;
+    line-height: 30px;
+}
+
+#aboutImg img{
+    width: 70%;
+    margin: 80px;
+    box-shadow: 30px 30px var(--blue);
+}
+
+#aboutImg img:hover{
+    opacity: 0.8;
+}
+
+/*TEAM*/
+
+#team h1{
+    margin: 20px 0px 10px 60px;
+    color: var(--blue);
+}
+
+#rectangle{
+    width: 85%;
+    height: 30px;
+    border: 5px;
+    border-color: var(--yellow);
+    background-color: var(--yellow);
+    margin: 0px 80px 0px auto;
+}
+
+#photographs{
+    text-align: center;
+    padding-bottom: 70px; 
+    display: grid;
+    grid-auto-flow: column;
+    margin: 50px 80px 0px 80px;
+}
+
+.lawyer{
+    width: 200px;
+    border: 10px solid var(--blue);
+    border-radius: 50%;
+    margin: 0px 70px 0px 70px;
+}
+
+
+.arrow{
+    width: 50px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#lawyer4, #lawyer5, #lawyer6{
+    display: none;
+}
+
+
+
+
+/*CARDS*/
+
+#expertise{
+    background-color: var(--blue);
+    padding-bottom: 35px;
+}
+
+.title{
+    text-align: center;
+    padding: 60px 30px 0px 30px;
+    color: white;
+}
+
+#cards{
+    display: flex; 
+    flex-direction: row;
+}
+
+.card{
+    background-color: white;
+    margin: 50px;
+    padding: 20px;
+}
+
+.cardDisplay{
+    display: flex;
+    grid-auto-flow: column;
+}
+
+.card h2{
+    margin-left:25px;
+    margin-top: 3px;
+}
+
+.texto-card{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.card:hover{
+    opacity: 0.9;
+    box-shadow: 10px 10px var(--yellow);
+    transform: scale(1.1);
+    transition: 150ms linear;
+}
+
+/*FORMULÁRIO*/
+
+#formTitle{
+    text-align: center;
+    color: var(--blue);
+    margin-top: 60px;
+}
+
+#textoContato{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-weight: 500;
+}
+
+#contact{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#form{
+    text-align: center;
+    margin-top: 60px;
+}
+
+input{
+    border: 0px;
+    border-radius: 10px;
+    background-color: #EAECE5;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+textarea{
+    border: 0px;
+    border-radius: 10px;
+    background-color: #EAECE5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+button{
+    border: 0px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    height: 40px;
+    width: 150px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: #39445e;
+    height: 40px;;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 20px #05103881;
+    transition-duration: 0.5px;
+}
+
+/*FINALFORMULARIO*/
+
+#imageContact{
+   align-items: center;
+}
+
+#imageContact img{
+    margin-top: 40px;
+}
+
+/*MENU INFERIOR*/
+
+#menuInferior{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;  
+    padding: 30px 0px 30px 0px;
+}
+ 
+#menuInferior h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#menuInferior p, li{
+    font-size: 15px;
+}
+
+#phone{
+    text-align: center;
+}
+
+#phone ul{
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+#phone ul li{
+    margin-top:auto;
+}
+
+#whatsapp{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#phoneNum{
+    margin: 4px 0px 0px 10px;
+}
+
+#links{
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: -60px;
+    margin-top: 0px
+}
+
+#links li{
+    padding-top: 0px;
+    padding-right: -10px;
+}
+
+#final{
+    background-color: var(--yellow);
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.zoomingIn{
+    zoom: 150%;
+}
